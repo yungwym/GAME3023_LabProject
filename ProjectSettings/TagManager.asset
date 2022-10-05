@@ -3,16 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Underworld
+  - Overworld
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Portal
   - Water
   - UI
-  - 
-  - 
+  - Player
+  - Spawn
   - 
   - 
   - 
@@ -40,6 +42,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3421879199
     locked: 0
   - name: Ground
     uniqueID: 356465563
