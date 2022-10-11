@@ -19,7 +19,7 @@ public class Portal : MonoBehaviour
         {
             traveller.LastSpawnPointName = destinationSpawn;
 
-            SceneManager.LoadScene(gameObject.tag, LoadSceneMode.Single);
+            SceneManager.LoadScene(gameObject.tag + "Scene", LoadSceneMode.Single);
         }
     }
 }
