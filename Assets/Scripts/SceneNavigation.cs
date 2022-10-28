@@ -13,6 +13,7 @@ public class SceneNavigation : MonoBehaviour
 
     public void LoadGameScene()
     {
+        GameSaveManager.Instance.playerPosition = new Vector3(0, 0, 0);
         SceneManager.LoadScene("OverworldScene");
     }
 

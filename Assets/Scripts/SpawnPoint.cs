@@ -22,9 +22,12 @@ public class SpawnPoint : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        Vector3 initialSpawnLocation = GameSaveManager.Instance.playerPosition;
+
+
         if (Player == null && playerPrefab != null)
         {
-            GameObject newPlayer = Instantiate(playerPrefab, transform.position, Quaternion.identity); //The original Player
+            GameObject newPlayer = Instantiate(playerPrefab, initialSpawnLocation, Quaternion.identity); //The original Player
             Player = newPlayer.GetComponent<Traveller>();
         }
     }
